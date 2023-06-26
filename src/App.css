@@ -1,0 +1,93 @@
+.attribution { font-size: 11px; text-align: center; align-items: end;}
+.primary{
+    color: #333333;
+    font-family: 'Space Mono', monospace;
+}
+
+.primary-header{
+  color: #333333;
+  font-family: 'Space Mono', monospace;
+}
+.secondary{
+    color: #4F4F4F;
+    font-family: 'Space Mono', monospace;
+    font-size: 30px;
+}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    padding-left: 3rem;
+}
+
+section{
+    flex-grow: 1;
+    padding-top: 8rem;
+    display: grid;
+    grid-template-columns: 
+        repeat(
+            auto-fit,
+            minmax(345px,1fr)
+        );
+    gap: 30px;
+}
+
+div > img {
+    width: 100%;
+    height: auto;
+}
+
+div > h1 {
+    font-size: 15px;
+    color: #333333;
+    margin: 10px;
+    font-family: 'Space Mono', monospace;
+}
+
+button{
+    color: white;
+    background-color: #333333;
+    width: 170px;
+    height: 60px;
+    font-family: 'Space Mono', monospace;
+    font-size: 10px;
+}
+
+footer {
+    height: 10px;
+}
+
+@media screen and (min-width:600px) {
+  
+  div > img {
+    width: 100%;
+    height: auto;
+  }
+
+  div > h1 {
+    font-size: 130px;
+    color: #333333;
+    margin: 10px;
+    font-family: 'Space Mono', monospace;
+  }
+
+  .secondary {
+    font-size: 60px;
+  }
+
+}
+
+@media screen and (max-width:600px) {
+  .primary {
+    font-size: 60px;
+  }
+
+  button {
+    width: 80x;
+    height: 30px;
+    font-size: 10px;
+  } 
+}
